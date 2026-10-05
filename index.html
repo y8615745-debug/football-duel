@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Football Duel</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;font-family:Tahoma,Arial,sans-serif;
+ background:linear-gradient(135deg,#063b20,#0b6b38,#031b10);
+ color:white;min-height:100vh
+}
+header{
+ background:rgba(0,0,0,.45);padding:18px;text-align:center;
+ font-size:25px;font-weight:bold;border-bottom:2px solid #25d366
+}
+.container{max-width:600px;margin:auto;padding:15px}
+.card{
+ background:rgba(0,0,0,.45);border:1px solid #ffffff22;
+ border-radius:18px;padding:18px;margin:12px 0;
+ box-shadow:0 8px 25px #0005
+}
+input,button{
+ width:100%;padding:14px;margin:7px 0;border-radius:12px;
+ border:0;font-size:16px
+}
+input{background:#fff;color:#111}
+button{background:#19c763;color:white;font-weight:bold;cursor:pointer}
+button.red{background:#e53935}
+button.blue{background:#1976d2}
+button.gold{background:#e0a800;color:#111}
+.nav{
+ position:fixed;bottom:0;left:0;right:0;background:#061b11;
+ display:flex;justify-content:space-around;padding:9px;
+ border-top:1px solid #ffffff22
+}
+.nav button{width:auto;margin:0;background:transparent;padding:8px;font-size:13px}
+.page{display:none;padding-bottom:80px}
+.page.active{display:block}
+.player{
+ display:flex;align-items:center;justify-content:space-between;
+ background:#ffffff12;padding:12px;border-radius:12px;margin:8px 0
+}
+.price{color:#ffd54f}
+.coin{color:#ffd54f;font-weight:bold}
+.big{font-size:28px;text-align:center}
+.chat{
+ background:#0005;border-radius:10px;padding:10px;margin:7px 0
+}
+.hidden{display:none}
+</style>
+</head>
+
+<body>
+
+<header>⚽ FOOTBALL DUEL ⚽</header>
+
+<div class="container">
+
+<!-- LOGIN -->
+<div id="login" class="page active">
+ <div class="card">
+  <h2>🎮 ورود به بازی</h2>
+  <input id="phone" placeholder="شماره موبایل">
+  <input id="username" placeholder="نام کاربری">
+  <button onclick="login()">ورود به بازی</button>
+ </
